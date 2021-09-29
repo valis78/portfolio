@@ -435,7 +435,7 @@ header nav .right a:hover::after{
 .sec4 .container .projet{
     width: 550px;
     cursor: pointer;
-    margin: 35px 20px;
+    margin: 50px 20px;
     height: 300px;
     border: 1px solid rgb(32, 31, 31);
 }
