@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/c4dd2b6b37.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,6 +20,8 @@
             <div class="left">
                 <div class="heart">❤️</div>
             </div>
+
+            <div class="burger">☰</div>
             <div class="right">
                 <a href="#sec1">Accueil</a>
                 <a href="#profil">Profil</a>
@@ -71,7 +74,7 @@
             </div>
 
         <div class="content">
-            <div class="left">
+            <div class="left" data-aos="fade-up">
                 <li><h3>HTML</h3>
                     <span class="bar"><span class="html">80%</span></span>
                 </li>
@@ -86,7 +89,7 @@
                 </li>
             </div>
             <div class="right">
-                <div class="block">
+                <div class="block" data-aos="faup" data-aos-delay='300'>
                     <div class="tete">
                         <img src="./vue.png" alt="vue">
                         <h3>Vue.js</h3>
@@ -98,7 +101,7 @@
                         des vidéos YouTube
                     </p>
                 </div>
-                    <div class="block">
+                    <div class="block" data-aos="fade-down" data-aos-delay='400'>
                         <div class="tete">
                             <img src="./react.png" alt="react">
                             <h3 style="color: rgb(0, 207, 214);">React</h3>
@@ -110,7 +113,7 @@
                             des vidéos YouTube comme Vue.js
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="block" data-aos="fade-up" data-aos-delay='500'>
                         <div class="tete">
                             <img src="./VSC.png" alt="Visual Studio Code">
                             <h3 style="color: rgb(24, 10, 153);">VSC</h3>
@@ -136,43 +139,43 @@
         </div>
 
         <div class="container">
-            <div class="projet">
+            <div class="projet" data-aos="fade-up" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/proton-page/"><img src="./proton.PNG" alt="proton"></a>
                 <h3>Technologie : HTML, CSS, JavaScript</h3>
                 <h3>Librairie : Slick.js, Jquery</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-down" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/Fusio-site/"><img src="./fusio.PNG" alt="fusio"></a>
                 <h3>Technologie : HTML, CSS, JavaScript</h3>
                 <h3>Librairie : Slick.js, Jquery</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-up" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/RecipePageDevChallenge./"><img src="./recipe.PNG" alt="recipe"></a>
                 <h3>Technologie : HTML, CSS</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-down" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/E-commerce-Page/"><img src="./ecommerce.PNG" alt="ecommerce"></a>
                 <h3>Technologie : HTML, CSS</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-up" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/Restaurant-site/"><img src="./restaurant.PNG" alt="restaurant"></a>
                 <h3>Technologie : HTML, CSS, JavaScript</h3>
                 <h3>Librairie : AOS, Jquery</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-down" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/App-Landing/"><img src="./shala.PNG" alt="shala"></a>
                 <h3>Technologie : HTML, CSS, JavaScript</h3>
                 <h3>Librairie : Slick.js, Jquery</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-up" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/Single-Page-N-2/"><img src="./game.PNG" alt="forge"></a>
                 <h3>Technologie : HTML, CSS, JavaScript</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-down" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/Single-Page-N-1/"><img src="./sass.PNG" alt="sass"></a>
                 <h3>Technologie : HTML, CSS</h3>
             </div>
-            <div class="projet">
+            <div class="projet" data-aos="fade-up" data-aos-delay='300'>
                 <a href="https://kevinpgn.github.io/Landing-Page-In-JavaScript-Slider/"><img src="./star.PNG" alt="starbucks"></a>
                 <h3>Technologie : HTML, CSS, JavaScript</h3>
             </div>
@@ -188,7 +191,7 @@
             </div>
 
             <div class="content">
-                <div class="left">
+                <div class="left" data-aos="fade-up" data-aos-delay='300'>
                     <h2 class="titre">Contactez Moi</h2>
 
     <form action="envoie">
@@ -227,7 +230,7 @@
 
     </form>
 
-                <div class="right">
+                <div class="right" data-aos="fade-down" data-aos-delay='400'>
 
                     <div class="item">
                         <div class="ensemble"><p class="icon"><i class="far fa-envelope"></i> <p class="mail">kevin.pigeon2810@gmail.com</p></p></div>
@@ -249,5 +252,14 @@
         </div>
     </section>
 
+    <footer>
+        <p>Copyright @2021 Kevin Pigeon : Fait avec HTML5/CSS</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

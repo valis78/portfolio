@@ -90,6 +90,13 @@ header nav .right a:hover::after{
     justify-content: center;
 }
 
+.burger{
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
 .sec1 .container h1{
     color: rgb(254, 254, 255);
     text-align: center;
@@ -111,7 +118,40 @@ header nav .right a:hover::after{
 
 @media screen and (max-width: 620px){
     header nav .right{
+        position: fixed;
+        z-index: 100;
+        background: rgb(51, 109, 68);
+        top: 0;
         display: none;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        left: 0;
+    }
+
+    header nav .right.active{
+        display: block;
+    }
+
+    header nav .right a{
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 60px;
+    }
+
+    header nav .right a::after{
+        display: none;
+    }
+
+    header nav .heart{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        position: fixed;
+        z-index: 101;
+        right: 20px;
     }
 }
 
@@ -649,4 +689,16 @@ header nav .right a:hover::after{
         text-align: center;
         padding-top: 12px;
     }
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 2.5rem 20px;
+    background: #181818;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
