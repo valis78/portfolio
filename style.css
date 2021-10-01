@@ -604,7 +604,7 @@ header nav .right a:hover::after{
     font-size: 1.2rem;
 }
 
-.sec5 .container .content button{
+.sec5 .container .content .submit{
     padding: 12px 30px;
     width: 150px;
     font-size: 1.1rem;
