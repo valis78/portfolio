@@ -188,7 +188,7 @@ header nav .right a:hover::after{
 .sec3{
     width: 100%;
     padding: 7rem 20px;
-    background-image: url('./img2.jpg');
+    background-color: #333;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -458,5 +458,195 @@ header nav .right a:hover::after{
 
     .sec4 .title{
         width: 100%;
+    }
+}
+
+
+/* Section 5 */
+
+.sec5{
+    padding: 5rem 20px;
+    width: 100%;
+    background-image: url('./contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec5 .container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.sec5 .container .en-tete{
+    text-align: center;
+}
+
+.sec5 .container .en-tete h1{
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+.sec5 .container .en-tete p{
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-size: 1.1em;
+}
+
+.sec5 .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.sec5 .container .content .left{
+    width: 900px;
+    border: 2px solid #3333;
+    padding: 20px;
+    background: #333;
+    box-shadow: 3px 15px 12px -3px #000000;
+    border-radius: 5px;
+}
+
+.sec5 .container .content .titre{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.sec5 .container .content .haut{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.sec5 .container .content .haut .gauche{
+    width: 45%;
+}
+
+.sec5 .container .content .haut .droite{
+    width: 45%;
+}
+
+.sec5 .container .content .bold{
+    color: white;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.sec5 .container .content input{
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #181818;
+    border: none;
+    color: white;
+}
+
+.sec5 .container .content .email,
+.sec5 .container .content .objet,
+.sec5 .container .content .message{
+    padding-top: 1.2rem;
+}
+
+.sec5 .container .content .message textarea{
+    width: 100%;
+    background: #181818;
+    border: none;
+    color: white;
+    font-family: sans-serif, 'Arial';
+    padding: 20px;
+    resize: none;
+    font-size: 1.2rem;
+}
+
+.sec5 .container .content button{
+    padding: 12px 30px;
+    width: 150px;
+    font-size: 1.1rem;
+    background: #2c2929;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px auto;
+    display: block;
+}
+
+.sec5 .container .content .right .item{
+    padding-bottom: 3rem;
+}
+
+.sec5 .container .content .right .item .icon{
+    font-size: 2em;
+    padding-left: 50px;
+    color: rgb(47, 38, 136);
+}
+
+.sec5 .container .content .right .item .ensemble{
+    display: flex;
+    align-items: center;
+}
+
+.sec5 .container .content .right .item .mail,
+.sec5 .container .content .right .item .lieu,
+.sec5 .container .content .right .item .phone{
+    
+    font-weight: bold;
+    padding-left: 50px;
+    font-size: 1.2rem;
+    color: rgb(7, 7, 7);
+   
+}
+
+
+@media screen and (max-width: 900px){
+    .sec5 .container .content{
+        flex-direction: column;
+    }
+
+    .sec5 .container .content .left{
+        width: 100%;
+    }
+
+    .sec5 .container .content .right{
+        margin-top: 1.7rem;
+    }
+
+    .sec5 .container .content .right .item .mail,
+    .sec5 .container .content .right .item .lieu,
+    .sec5 .container .content .right .item .phone{
+    
+        width: 100%;
+
+    }
+
+    .sec5 .container .content .right .item .icon{
+        font-size: 2em;
+        padding-left: 0;
+        color: rgb(47, 38, 136);
+    }
+
+    .sec5 .container .content .right .item{
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 410px){
+    .sec5 .container .content .right .item .ensemble{
+        display: block;
+        text-align: center;
+    }
+
+    .sec5 .container .content .right .item .ensemble p{
+        padding-left: 0;
+        text-align: center;
+        padding-top: 12px;
     }
 }
